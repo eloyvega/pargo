@@ -1,3 +1,9 @@
 <template name="home">
-    <h2>Home</h2>
+    {{#if currentUser}}
+      {{> dashboard}}
+      {{else}}
+    <h2>Inicia sesión para empezar a pedir prestado</h2>
+    {{/if}}
+
+
 </template>
